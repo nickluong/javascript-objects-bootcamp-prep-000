@@ -1,12 +1,11 @@
-var playlist = {
-  drake : "god\'s plan"
-}
+var playlist = {artist: 'song'};
 
-function updatePlaylist(playlist, artist, song){
+function updatePlaylist(playlist, artist, song) {
   playlist[artist] = song
   return playlist
 }
 
-function removeFromPlaylist(playlist, artistName){
-  delete playlist.Slowdrive; 
+function removeFromPlaylist(playlist, artist) {
+  delete playlist[artist]
+  return playlist
 }
